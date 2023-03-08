@@ -28,7 +28,7 @@
 - Postman
 
 ## Installation
-We need to install Flask-RESTful, light-weight Flask extention to build REST API quickly.
+We need to install Flask-RESTful, the light-weight Flask extention to build REST API quickly.
 ```sh
 pip install python
 
