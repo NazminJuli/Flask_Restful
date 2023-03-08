@@ -9,7 +9,7 @@
     parent_id = db.Column(db.Integer, ForeignKey('parent.id', ondelete="cascade"), nullable=False)
     pcrel = db.relationship('Parents',  backref = (db.backref("child", cascade="all, delete, delete-orphan")) )
     
-    # In a one to many model, when parent node is deleted, associated children entry should also be removed, hence
+    In a one to many model, when parent node is deleted, associated children entry should also be removed, hence
     cascade delete has been added here
 ```
 - I have used Flask-RESTful **fields** to render the **nested resources** 
@@ -17,7 +17,7 @@
 - ***localhost/parent***  has POST,GET,PUT,DELETE operation where ***Update*** works on parent's address
 - ***localhost/child*** has POST,GET,DELETE operation 
 - Each HTTP request has ***JSON*** formated status and message as response.
-
+- **Postman** has been used to send request
 
 ## Tools Used
 - python (3.7.6) Windows Version
