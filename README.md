@@ -14,7 +14,7 @@
 ```
 - I have used Flask-RESTful **fields** to render the **nested resources** 
 - The decorator **marshal_with** has been used to format the response
-- ***localhost/parent***  has POST,GET,PUT,DELETE operation where ***Update address has been added***
+- ***localhost/parent***  has POST,GET,PUT,DELETE operation where ***Update*** works on parent's address
 - ***localhost/child*** has POST,GET,DELETE operation 
 - Each HTTP request has ***JSON*** formated status and message as response.
 
